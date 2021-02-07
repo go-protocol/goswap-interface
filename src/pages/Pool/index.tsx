@@ -181,7 +181,7 @@ export default function Pool() {
               <>
                 <ButtonSecondary>
                   <RowBetween>
-                    <ExternalLink href={'https://info.goswap.app/account/' + account}>
+                    <ExternalLink href={'https://info.goswap.app/#/account/' + account}>
                       {t('accountAnalyticsAndAccruedFees')}
                     </ExternalLink>
                     <span> ↗</span>
