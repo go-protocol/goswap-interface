@@ -13,6 +13,7 @@ type FormaticSupportedChains = Extract<
   | ChainId.BIANTEST
   | ChainId.HECOMAIN
   | ChainId.HECOTEST
+  | ChainId.OKTEST
 >
 
 const CHAIN_ID_NETWORK_ARGUMENT: { readonly [chainId in FormaticSupportedChains]: string | undefined } = {
@@ -23,7 +24,8 @@ const CHAIN_ID_NETWORK_ARGUMENT: { readonly [chainId in FormaticSupportedChains]
   [ChainId.BIANMAIN]: 'bian',
   [ChainId.BIANTEST]: 'bian-test',
   [ChainId.HECOMAIN]: 'heco',
-  [ChainId.HECOTEST]: 'heco-test'
+  [ChainId.HECOTEST]: 'heco-test',
+  [ChainId.OKTEST]: 'ok-test'
 }
 
 export class FortmaticConnector extends FortmaticConnectorCore {

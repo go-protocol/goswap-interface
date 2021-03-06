@@ -12,7 +12,8 @@ const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.BIANMAIN]: '',
   [ChainId.BIANTEST]: '',
   [ChainId.HECOMAIN]: '',
-  [ChainId.HECOTEST]: ''
+  [ChainId.HECOTEST]: '',
+  [ChainId.OKTEST]: ''
 }
 
 const V1_FACTORY_INTERFACE = new Interface(V1_FACTORY_ABI)

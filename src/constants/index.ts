@@ -12,7 +12,8 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]?: string } =  {
   [ChainId.HECOMAIN]: '0xB88040A237F8556Cf63E305a06238409B3CAE7dC',
   [ChainId.HECOTEST]: '0xca8e585a44375fab1bf6ad50887a770d06f0e32e',
   [ChainId.BIANMAIN]: '0xB88040A237F8556Cf63E305a06238409B3CAE7dC',
-  [ChainId.BIANTEST]: '0xB88040A237F8556Cf63E305a06238409B3CAE7dC'
+  [ChainId.BIANTEST]: '0xB88040A237F8556Cf63E305a06238409B3CAE7dC',
+  [ChainId.OKTEST]: '0x7f6c436f47049f2dbd34fd208b14492259a1d8af'
 }
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
@@ -65,6 +66,13 @@ export const UNI: { [chainId in ChainId]: Token } = {
   ),
   [ChainId.HECOTEST]: new Token(
     ChainId.HECOTEST,
+    '0x50b29a42c9e4d0f940292c386207f492458ee358',
+    10,
+    'HT',
+    'Unisave'
+  ),
+  [ChainId.OKTEST]: new Token(
+    ChainId.OKTEST,
     '0x50b29a42c9e4d0f940292c386207f492458ee358',
     10,
     'HT',
@@ -151,7 +159,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.BIANMAIN]: [WETH[ChainId.BIANMAIN]],
   [ChainId.BIANTEST]: [WETH[ChainId.BIANTEST]],
   [ChainId.HECOMAIN]: [WETH[ChainId.HECOMAIN]],
-  [ChainId.HECOTEST]: [WETH[ChainId.HECOTEST]]
+  [ChainId.HECOTEST]: [WETH[ChainId.HECOTEST]],
+  [ChainId.OKTEST]: [WETH[ChainId.OKTEST]]
 }
 
 // used to construct intermediary pairs for trading

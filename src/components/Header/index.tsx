@@ -306,7 +306,8 @@ const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.BIANMAIN]: 'BSC Mainnet',
   [ChainId.BIANTEST]: 'BSC Testnet',
   [ChainId.HECOMAIN]: 'HECO Mainnet',
-  [ChainId.HECOTEST]: 'HECO Testnet'
+  [ChainId.HECOTEST]: 'HECO Testnet',
+  [ChainId.OKTEST]: 'OK Chain Test'
 }
 
 export default function Header() {
