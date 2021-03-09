@@ -375,6 +375,9 @@ export default function Header() {
           <StyledExternalLink id={`stake-nav-link`} href={infoLink}>
             {t('info')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
+          <StyledExternalLink id={`stake-nav-link`} href={"https://farm.goswap.app/#/"}>
+            {t('gofarm')} <span style={{ fontSize: '11px' }}>↗</span>
+          </StyledExternalLink>
           {networkType === 'BSC' && (
             <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
               {t('bridge')} <span style={{ fontSize: '11px' }}>↗</span>
