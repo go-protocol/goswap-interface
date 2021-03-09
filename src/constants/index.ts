@@ -195,15 +195,22 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, USDC, USDT],
   [ChainId.BIANMAIN]: [...WETH_ONLY[ChainId.BIANMAIN], B_USDT, BUSD, B_DAI],
   [ChainId.BIANTEST]: [...WETH_ONLY[ChainId.BIANTEST], T_USDT, T_BUSD, T_DAI],
-  [ChainId.HECOTEST]: [...WETH_ONLY[ChainId.HECOTEST]]
+  [ChainId.HECOTEST]: [...WETH_ONLY[ChainId.HECOTEST]],
+  [ChainId.OKTEST]: [...WETH_ONLY[ChainId.OKTEST]]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.HECOTEST]: [
+  [ChainId.HECOMAIN]: [
     [
-      new Token(ChainId.HECOTEST, '0x411c71e1a08b5c3831cafe68a808f00b8ed03188', 18, 'GOT', 'GoSwap Token'),
-      new Token(ChainId.HECOTEST, '0xddda2edf140ce5bc3f2987312d8b64f429dadadf', 18, 'GOC', 'GoSwap Cash')
+      new Token(ChainId.HECOMAIN, '0x411c71e1a08b5c3831cafe68a808f00b8ed03188', 18, 'GOT', 'GoSwap Token'),
+      new Token(ChainId.HECOMAIN, '0xddda2edf140ce5bc3f2987312d8b64f429dadadf', 18, 'GOC', 'GoCash Cash')
       // new Token(ChainId.HECOTEST, '0x0f548051B135fa8f7F6190cb78Fd13eCB544fEE6', 8, 'HUSD', 'Heco USD')
+    ]
+  ],
+  [ChainId.OKTEST]: [
+    [
+      new Token(ChainId.OKTEST, '0x411c71e1a08b5c3831cafe68a808f00b8ed03188', 18, 'GOT', 'GoSwap Token'),
+      new Token(ChainId.OKTEST, '0xC80f4a6DB039e63dbCC4D7286B77AF14D7DB16Df', 18, 'USDK', 'Heco USD')
     ]
   ]
 }
