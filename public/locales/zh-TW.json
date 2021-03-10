@@ -360,5 +360,6 @@
   "wallet-address-or-ens-name": "錢包地址或ENS名稱",
   "when-you-withdraw-the-contract-will-automagically-claim-scam-on-your-behalf": "當您退出時，合同將代表您自動索賠SCAM！",
   "your-transaction-will-revert": "您的交易將恢復。",
-  "yourLiquidityDeposits": "您的流動資金存款"
+  "yourLiquidityDeposits": "您的流動資金存款",
+  "gofarm":"农场"
 }

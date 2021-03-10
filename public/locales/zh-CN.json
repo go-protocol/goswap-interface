@@ -360,5 +360,6 @@
   "unlockVoting": "解锁投票",
   "updateDelegation": "更新委托",
   "voteAgainst": "反对",
-  "voteFor": "为...投票"
+  "voteFor": "为...投票",
+  "gofarm":"农场"
 }
